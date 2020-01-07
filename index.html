@@ -11,7 +11,7 @@
 <body>
 
     <div id="app">
-        <input v-model="newCat" >
+        <input v-model="newCat" v-on:keyup.enter="addKitty" >
         <br>
         <button v-on:click="addKitty">
 
