@@ -10,7 +10,8 @@ var app = new Vue({
   },
   methods: {
 	  addKitty: function() {
-		  return this.cats.push({name: this.newCat})
+		  this.cats.push({name: this.newCat})
+		  this.newCat = ""
 	  }
   }
 })
